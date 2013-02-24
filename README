@@ -1,49 +1,67 @@
-Name		: Alberto Plata
-ID			: 1291980
-Assignment	: pa4
+Alberto Plata
+amplataforgit@gmail.com
 
+ ---- ABOUT THIS PROGRAM ----
+This program reads in a file, in1.txt, which contains data
+for a large undirected graph. Breadth first search is 
+performed on the graph to find the shortest path from a 
+given source node to a destination node. The results are 
+sent to an output file, out1.txt.
+
+ ---- COMPILE & RUN ----
+NOTE: I am assuming you are running this program 
+in a unix/linux environment.
+
+1. Download the files as a zip file to a directory 
+of your choice. Then go to that directory and unzip 
+(or 'extract all') the files.
+
+2. In command line, type: 
+   gmake
+NOTE: If you don't have 'gmake' then you will need to 
+reconfigure the 'Makefile' to work with 'make'.
+
+3. Finally, in command line, type:
+   FindPath in1.txt [outputfile]
+You can name your outputfile anything want but I would 
+recommend something other than out1.txt. This will 
+allow you to check the results of your outputfile 
+with the out1.txt file I supplied.
+
+ ---- ABOUT THESE FILES ----
 Graph.c
-Contains the Graph ADT to be used in various files.
-This file contains all the functions required and all
-the additional files aswell. 
+Contains the Graph ADT to be used by FindPath.c.
 
 Graph.h:
-This file is what is sent to many of the other files
-within this assignment. The functions contained in 
-Graph.c and not in Graph.h are considered private.
+This is the .h file for Graph.c.
 
 GraphTest.c:
-This file was used to test the Graph ADT.
-In order to run this program please type 'gmake GraphTest' 
-in command line to run ListTest.c instead of Shuffle.c.
+This file was used to test the Graph ADT. In order to 
+run this program please alter the Makefile to run 
+GraphTest.c instead of FindPath.c.
 
 List.h:
-This file is what is sent to Graph.c, FindPath.c, ListTest.c,
-List.c, Graph.h a,d GraphTest.c. The functions contained in 
-List.c and not in List.h are considered private.
+This is the .h file for List.c.
 
 List.c:
-Contains the List ADT to be used in various files.
-This file contains all the functions required and all
-the additional files aswell. 
+Contains the List ADT to be used by Graph.c.
 
 ListTest.c:
 This file was used to test the List ADT in List.c.
 Within this file are some commented lines that can be 
 used to activate the RuntimeException from List.c. 
-In order to run this program please type 'gmake ListTest' 
-in command line to run ListTest.c instead of Shuffle.c. 
+In order to run this program please alter the Makefile 
+to run ListTest.c instead of FindPath.c.
 
 FindPath.c:
-This file does everything that was required by the assignment.
-This file opens a file to read in data and then it outputs the 
-correct information to a different file.
+This is the main file of the program. It reads in in1.txt
+which contains data for a large undirected graph. Breadth 
+first search is performed on the graph to find the shortest 
+path from a given source node to a destination node. The 
+results are sent to an output file, out1.txt.
 
 Makefile:
-This is the exact Makefile that was given in the assignment.
-I am not sure if I needed to alter it at all. In order to run 
-this program please type 'gmake ListTest' or 'gmake GraphTest'
-in command line to run ListTest.c or GraphTest.c instead of FindPath.c. 
+This Makefile is currently set to run the main file, FindPath.c.
+This Makefile must be altered to run the GraphTest.c file and
+ListTest.c. 
 
-README:
-This file has all the information needed for pa4.
