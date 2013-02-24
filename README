@@ -1,0 +1,49 @@
+Name		: Alberto Plata
+ID			: 1291980
+Assignment	: pa4
+
+Graph.c
+Contains the Graph ADT to be used in various files.
+This file contains all the functions required and all
+the additional files aswell. 
+
+Graph.h:
+This file is what is sent to many of the other files
+within this assignment. The functions contained in 
+Graph.c and not in Graph.h are considered private.
+
+GraphTest.c:
+This file was used to test the Graph ADT.
+In order to run this program please type 'gmake GraphTest' 
+in command line to run ListTest.c instead of Shuffle.c.
+
+List.h:
+This file is what is sent to Graph.c, FindPath.c, ListTest.c,
+List.c, Graph.h a,d GraphTest.c. The functions contained in 
+List.c and not in List.h are considered private.
+
+List.c:
+Contains the List ADT to be used in various files.
+This file contains all the functions required and all
+the additional files aswell. 
+
+ListTest.c:
+This file was used to test the List ADT in List.c.
+Within this file are some commented lines that can be 
+used to activate the RuntimeException from List.c. 
+In order to run this program please type 'gmake ListTest' 
+in command line to run ListTest.c instead of Shuffle.c. 
+
+FindPath.c:
+This file does everything that was required by the assignment.
+This file opens a file to read in data and then it outputs the 
+correct information to a different file.
+
+Makefile:
+This is the exact Makefile that was given in the assignment.
+I am not sure if I needed to alter it at all. In order to run 
+this program please type 'gmake ListTest' or 'gmake GraphTest'
+in command line to run ListTest.c or GraphTest.c instead of FindPath.c. 
+
+README:
+This file has all the information needed for pa4.
